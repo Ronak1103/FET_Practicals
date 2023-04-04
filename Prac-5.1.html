@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Find a perfect number</title>
+<script>
+    function prfctnm()
+{
+    let number = prompt("Please Enter a Number: ");
+    let cpn = number;
+    parseInt(cpn);
+    
+    while (true) {
+    if (cpn == 0 || cpn==null) {
+        alert('Please Enter a valid number');
+        break;
+            }
+            
+        let divisorSum = 0;
+        for (let i = 1; i < cpn; i++) {
+            if (cpn % i == 0) {
+                divisorSum += i;
+            }
+        }
+        
+        if (divisorSum == cpn) {
+            alert('The next perfect number is : ' + cpn);
+            break;
+        }
+    cpn++;
+
+    }
+}
+prfctnm();
+</script>
+</head>
+</html>

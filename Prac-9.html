@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Tutorial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         .content {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML</h2>
+    <p class="content">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+    
+    <h2>CSS</h2>
+    <p class="content">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+    
+    <h2>JavaScript</h2>
+    <p class="content">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</p>
+    
+    <h2>DOM</h2>
+    <p class="content">The Document Object Model is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree.</p>
+    
+    <h2>DHTML</h2>
+    <p class="content">Dynamic HTML, or DHTML, is a term which was used by some browser vendors to describe the combination of HTML, style sheets and client-side scripts that enabled the creation of interactive and animated documents. The application of DHTML was introduced by Microsoft with the release of Internet Explorer 4 in 1997.</p>
+    
+    <script>
+        
+        var headings = document.getElementsByTagName("h2");
+        
+        for (var i = 0; i < headings.length; i++) {
+            var heading = headings[i];
+            heading.addEventListener("click", function() {
+
+                var contents = document.getElementsByClassName("content");
+                for (var j = 0; j < contents.length; j++) {
+                    contents[j].style.display = "none";
+                }
+                this.nextElementSibling.style.display = "block";
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<body>
+<script>
+    function checkVaccine() 
+    {
+        var name = prompt("Enter your name");
+        var nationality = prompt("Enter Your Nationality");
+        var vaccineDose = prompt("How many Vaccinedose you taken?");
+        if(vaccineDose >= 1 && vaccineDose <4) 
+        {
+            alert("Welcome to CoWin portal!");
+        }
+        else if(vaccineDose>3)
+        {
+            alert("More than 3 vaccinedoses you can't take");
+        }
+        else {
+            alert("Error Message: Please get vaccinated for at least 1 dose to access CoWin portal.");
+            close();
+        }
+    }
+    checkVaccine();
+</script>
+</body>
+</html>

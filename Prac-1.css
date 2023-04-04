@@ -1,0 +1,133 @@
+* {
+  Margin: 0;
+  Padding: 0;
+  Box-Sizing: Border-Box;
+  Font-Family: "Poppins", Sans-Serif;
+}
+A {
+  Text-Decoration: None;
+  
+}
+.div1 {
+  Width: 100%;
+  Height: 100vh;
+  Background: Url(Img/Bg.Png);
+  Background-Size: Cover;
+}
+ul li{
+  List-Style: None;
+  display: inline;
+  
+}
+Nav {
+  display: Flex;
+  Align-Items: Center;
+  Justify-Content: Space-Between;
+  Padding: 30px 100px;
+  background-color: black;
+  
+}
+Nav Ul Li {
+  List-Style: None;
+  display: Inline-Block;
+  Padding: 10px 20px;
+}
+Nav Ul Li A {
+  Color: white;
+  Position: Relative;
+  Padding: 5px 0;
+}
+Nav Ul Li A:hover {
+  Color: #fd475f;
+}
+Nav Ul Li A:after {
+  Content: "";
+  Position: Absolute;
+  Left: 0;
+  Width: 0;
+  Height: 3px;
+  Background: #Fd4766;
+  Transition: 0.3s;
+  Bottom: 0;
+}
+Nav Ul Li A:hover:after {
+  Width: 100%;
+}
+
+.Content {
+  Position: Absolute;
+  Top: 15%;
+  Left: 8%;
+}
+
+.Content H1{
+  Color: #1f1f25;
+  Font-Size: 75px;
+  Font-Weight: 900;
+  Line-Height: 50px;
+  Text-Transform: Inherit;
+  Width: 70%;
+  float: right;
+  position:relative;
+}
+.Content H1 Span {
+  Color: #Fd4766;
+}
+.Content P {
+  Width: 70%;
+  Color: #202020;
+  Margin-Top: 45px;
+  Margin-Bottom: 40px;
+  float: right;
+  left :0px;
+  position: relative;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  Border: 4px Solid black;
+  padding: 10px;
+  height: 308px;
+}
+
+.fa-facebook ,.fa-linkedin{
+  background: #3B5998;
+  color: white;
+ }
+
+.fa:hover {  
+  opacity: 0.9; 
+  background-color: green; 
+}  
+div img{
+  position: relative;
+  top: 15px;
+  left: 100px;
+  float: left;
+  border: 4px solid #000000;
+}
+
+.SOCIAL UL LI a
+{
+  display:inline-block;
+  Color: white;
+  Position: Relative;
+  top: 0px;
+  Padding: 15px 15px;
+  margin: 10px;
+  top: 60%;
+  left: 45%;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: RoyalBlue;
+}

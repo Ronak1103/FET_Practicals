@@ -1,0 +1,28 @@
+<html>
+<head>
+<body>
+<script>
+        let arr = [NaN, 0, 15, false, -22, "Ronak", undefined, 47, null];
+        let cleanArr = arr.filter(Number);
+
+        function shuffle(arr) {
+        for (let i = arr.length - 1; i > 0; i--) 
+        {
+                
+        let j = Math.random() * (i + 1);
+        j = parseInt(j);
+
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        }
+        return arr;
+        }
+        console.log("Cleaned array:", cleanArr);
+        console.log("Number of elements after cleaned array:", cleanArr.length);
+        console.log("Shuffled array :", shuffle(cleanArr));
+
+</script>
+</body>
+</head>
+</html>
